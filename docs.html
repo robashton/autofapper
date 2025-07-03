@@ -119,97 +119,97 @@
             <aside class="sidebar">
                 <h3>Documentation</h3>
                 <ul>
-                    <li><a href="#getting-started">Getting Started</a></li>
-                    <li><a href="#installation">Installation</a></li>
-                    <li><a href="#basic-usage">Basic Usage</a></li>
-                    <li><a href="#configuration">Configuration</a></li>
-                    <li><a href="#advanced">Advanced Features</a></li>
-                    <li><a href="#api">API Reference</a></li>
-                    <li><a href="#examples">Examples</a></li>
-                    <li><a href="#troubleshooting">Troubleshooting</a></li>
+                    <li><a href="#getting-started">Getting It Up</a></li>
+                    <li><a href="#installation">Insertion Guide</a></li>
+                    <li><a href="#basic-usage">First Time Usage</a></li>
+                    <li><a href="#configuration">Customizing Your Experience</a></li>
+                    <li><a href="#advanced">Advanced Techniques</a></li>
+                    <li><a href="#api">API Positions</a></li>
+                    <li><a href="#examples">Real-World Action</a></li>
+                    <li><a href="#troubleshooting">When Things Go Soft</a></li>
                 </ul>
             </aside>
 
             <div class="docs-content">
-                <h1>AutoFapper Documentation</h1>
-                <p>Welcome to the official AutoFapper documentation. Here you'll find everything you need to achieve maximum satisfaction with minimal effort.</p>
+                <h1>AutoFapper User Manual</h1>
+                <p>Welcome to the official AutoFapper guide. This comprehensive manual will teach you how to achieve explosive results with just a few simple strokes of code.</p>
 
-                <h2 id="getting-started">Getting Started</h2>
-                <p>AutoFapper is a powerful object-to-object mapping library that eliminates the tedious task of writing mapping code. With intelligent conventions and a fluent API, you can focus on what matters most.</p>
+                <h2 id="getting-started">Getting It Up</h2>
+                <p>AutoFapper is a powerful tool for handling your object-to-object needs. It eliminates the repetitive manual work of mapping, letting you achieve climactic results with our smooth, fluent API.</p>
 
-                <h2 id="installation">Installation</h2>
-                <p>Install AutoFapper via NuGet Package Manager:</p>
+                <h2 id="installation">Insertion Guide</h2>
+                <p>Slide AutoFapper into your project via NuGet Package Manager:</p>
                 <pre><code>Install-Package AutoFapper</code></pre>
                 
-                <p>Or using the .NET CLI:</p>
+                <p>Or slip it in using the .NET CLI:</p>
                 <pre><code>dotnet add package AutoFapper</code></pre>
 
-                <h2 id="basic-usage">Basic Usage</h2>
-                <p>Getting started with AutoFapper is incredibly simple:</p>
+                <h2 id="basic-usage">First Time Usage</h2>
+                <p>Your first time with AutoFapper should be gentle and easy:</p>
                 
-                <pre><code>// Configure your mappings
+                <pre><code>// Set up your preferences
 var configuration = new FapperConfiguration(cfg => {
     cfg.CreateMap&lt;Source, Destination&gt;();
 });
 
-// Create the fapper instance
+// Get your fapper ready
 var fapper = configuration.CreateFapper();
 
-// Perform the mapping
+// Execute with a single stroke
 var source = new Source { Name = "Test", Value = 42 };
 var destination = fapper.Fap&lt;Destination&gt;(source);</code></pre>
 
-                <h2 id="configuration">Configuration</h2>
-                <p>AutoFapper supports various configuration options to customize your mapping experience:</p>
+                <h2 id="configuration">Customizing Your Experience</h2>
+                <p>AutoFapper supports various positions and techniques to enhance your mapping pleasure:</p>
                 
-                <h3>Custom Value Resolvers</h3>
+                <h3>Custom Stroke Patterns</h3>
                 <pre><code>cfg.CreateMap&lt;Source, Destination&gt;()
     .ForMember(dest => dest.FullName, 
         opt => opt.MapFrom(src => $"{src.FirstName} {src.LastName}"));</code></pre>
 
-                <h3>Ignore Properties</h3>
+                <h3>Selective Stimulation</h3>
                 <pre><code>cfg.CreateMap&lt;Source, Destination&gt;()
-    .ForMember(dest => dest.SecretProperty, opt => opt.Ignore());</code></pre>
+    .ForMember(dest => dest.SensitiveArea, opt => opt.Ignore());</code></pre>
 
-                <h2 id="advanced">Advanced Features</h2>
+                <h2 id="advanced">Advanced Techniques</h2>
                 
-                <h3>Nested Mappings</h3>
-                <p>AutoFapper automatically handles nested object mappings:</p>
+                <h3>Deep Penetration Mapping</h3>
+                <p>AutoFapper goes deep, handling nested objects with ease:</p>
                 <pre><code>cfg.CreateMap&lt;Order, OrderDto&gt;();
 cfg.CreateMap&lt;Customer, CustomerDto&gt;();
 
 // AutoFapper will automatically map nested Customer objects</code></pre>
 
-                <h3>Collection Mapping</h3>
-                <p>Collections are handled seamlessly:</p>
+                <h3>Group Sessions</h3>
+                <p>Handle multiple objects at once for maximum efficiency:</p>
                 <pre><code>var sources = new List&lt;Source&gt; { /* ... */ };
 var destinations = fapper.Fap&lt;List&lt;Destination&gt;&gt;(sources);</code></pre>
 
-                <h3>Conditional Mapping</h3>
+                <h3>Conditional Climax</h3>
                 <pre><code>cfg.CreateMap&lt;Source, Destination&gt;()
-    .ForMember(dest => dest.Adult, 
+    .ForMember(dest => dest.Mature, 
         opt => opt.MapFrom(src => src.Age >= 18));</code></pre>
 
-                <h2 id="api">API Reference</h2>
+                <h2 id="api">API Positions</h2>
                 
                 <h3>IFapper Interface</h3>
-                <p>The main interface for performing mappings:</p>
+                <p>The main tool for getting the job done:</p>
                 <ul>
-                    <li><code>TDestination Fap&lt;TDestination&gt;(object source)</code> - Maps an object to the specified destination type</li>
-                    <li><code>TDestination Fap&lt;TSource, TDestination&gt;(TSource source)</code> - Strongly-typed mapping</li>
-                    <li><code>void Fap&lt;TSource, TDestination&gt;(TSource source, TDestination destination)</code> - Maps to an existing object</li>
+                    <li><code>TDestination Fap&lt;TDestination&gt;(object source)</code> - Quick release to the specified type</li>
+                    <li><code>TDestination Fap&lt;TSource, TDestination&gt;(TSource source)</code> - Type-safe satisfaction</li>
+                    <li><code>void Fap&lt;TSource, TDestination&gt;(TSource source, TDestination destination)</code> - Finish on an existing object</li>
                 </ul>
 
-                <h3>Configuration Methods</h3>
+                <h3>Foreplay Methods</h3>
                 <ul>
-                    <li><code>CreateMap&lt;TSource, TDestination&gt;()</code> - Creates a mapping configuration</li>
-                    <li><code>ForMember()</code> - Configures individual member mappings</li>
-                    <li><code>ReverseMap()</code> - Creates a two-way mapping</li>
+                    <li><code>CreateMap&lt;TSource, TDestination&gt;()</code> - Establishes the connection</li>
+                    <li><code>ForMember()</code> - Focuses on specific areas</li>
+                    <li><code>ReverseMap()</code> - Enables switching positions</li>
                 </ul>
 
-                <h2 id="examples">Examples</h2>
+                <h2 id="examples">Real-World Action</h2>
                 
-                <h3>DTO to Entity Mapping</h3>
+                <h3>Quick and Dirty DTO Action</h3>
                 <pre><code>public class UserDto
 {
     public string Username { get; set; }
@@ -229,33 +229,33 @@ cfg.CreateMap&lt;UserDto, User&gt;()
     .ForMember(dest => dest.CreatedAt, 
         opt => opt.MapFrom(src => DateTime.Now));</code></pre>
 
-                <h3>Flattening Complex Objects</h3>
+                <h3>Flattening the Curves</h3>
                 <pre><code>cfg.CreateMap&lt;Customer, CustomerViewModel&gt;()
     .ForMember(dest => dest.AddressLine1, 
         opt => opt.MapFrom(src => src.Address.Line1))
     .ForMember(dest => dest.AddressCity, 
         opt => opt.MapFrom(src => src.Address.City));</code></pre>
 
-                <h2 id="troubleshooting">Troubleshooting</h2>
+                <h2 id="troubleshooting">When Things Go Soft</h2>
                 
-                <h3>Common Issues</h3>
-                <p><strong>Missing type map configuration</strong></p>
-                <p>Ensure you've created a map for your types:</p>
+                <h3>Performance Problems</h3>
+                <p><strong>Can't get it up (Missing type map configuration)</strong></p>
+                <p>Make sure you've established the connection first:</p>
                 <pre><code>cfg.CreateMap&lt;Source, Destination&gt;();</code></pre>
 
-                <p><strong>Null reference exceptions</strong></p>
-                <p>Use null checking in your custom resolvers:</p>
+                <p><strong>Premature termination (Null reference exceptions)</strong></p>
+                <p>Always use protection in your custom resolvers:</p>
                 <pre><code>cfg.CreateMap&lt;Source, Destination&gt;()
     .ForMember(dest => dest.Name, 
         opt => opt.MapFrom(src => src.Name ?? "Unknown"));</code></pre>
 
-                <p><strong>Performance issues</strong></p>
-                <p>For high-performance scenarios, compile your mappings:</p>
+                <p><strong>Not lasting long enough (Performance issues)</strong></p>
+                <p>For marathon sessions, pre-compile your mappings:</p>
                 <pre><code>var fapper = configuration.CreateFapper();
-fapper.CompileMappings();</code></pre>
+fapper.WarmUp();</code></pre>
 
-                <h3>Getting Help</h3>
-                <p>If you're still experiencing issues, check out our community forums or submit an issue on our GitHub repository.</p>
+                <h3>Still Need Help?</h3>
+                <p>If you're still having trouble reaching completion, visit our community support groups or submit your problem to our satisfaction specialists on GitHub.</p>
             </div>
         </div>
     </main>
